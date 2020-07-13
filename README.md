@@ -17,11 +17,17 @@ Use the test data in the table below;
 
 Expected Result;
 
-Car gurus used car filter page will open. User will fill the test data in the search field on the left corner of the web page and click on the search button. Used hyundai sonata will be displayed. 
+Car gurus used car home page will open. User will fill the test data in the search field on the left corner of the web page and click on the search button. Used hyundai sonata vehicles will be displayed. 
 
 Actual result;
 
-![hyundai sonata 2015 - 2017](screenshots/used_hyundai_sonata_2015_2017.png)
+Used car home page
+
+![used car home page screenshot](screenshots/cargurus_used_cars_search.png)
+
+Used Hyundai Sonata results page
+
+![hyundai sonata 2015 - 2017 results screenshot](screenshots/used_hyundai_sonata_2015_2017.png)
 
 
 For this example, **ChromeDriver** version is 83 and should be located inside your downloads folder ("\\Users\\user_name\\Downloads\\chromedriver_win32\\chromedriver.exe"). Make sure to replace "user_name" with a suitable name from your file path.
