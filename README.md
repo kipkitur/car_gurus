@@ -16,9 +16,11 @@ Use the test data in the table below;
 | radius | 25 miles |
 
 Expected Result;
+
 Car gurus used car filter page will open. User will fill the test data in the search field on the left corner of the web page and click on the search button. Used hyundai sonata will be displayed. 
 
 Actual result;
+
 ![hyundai sonata 2015 - 2017](screenshots/used_hyundai_sonata_2015_2017.png)
 
 
