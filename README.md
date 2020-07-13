@@ -56,4 +56,5 @@ To install the necessary packages using **PyCharm** (on **Windows 10**):
 Make sure you have the packages installed otherwise you won't be able to import the modules and run your tests.
 
 You can run your test via terminal. Type **pytest -v filename** or **pytest -v** to run all other tests you have in the folder.
+
 ![pytest -v command on terminal](screenshots/terminal_pytest.PNG)
