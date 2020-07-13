@@ -25,7 +25,7 @@ Used car home page
 
 ![used car home page screenshot](screenshots/cargurus_used_cars_search.png)
 
-Used Hyundai Sonata web page
+Used Hyundai Sonata results page
 
 ![hyundai sonata 2015 - 2017 results screenshot](screenshots/used_hyundai_sonata_2015_2017.png)
 
