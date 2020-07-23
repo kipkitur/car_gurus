@@ -57,7 +57,8 @@ Make sure you have the packages installed otherwise you won't be able to import 
 
 You can run your test via terminal. Type **pytest -v filename** or **pytest -v** to run all other tests you have in the folder.
 
-**Important**
+**Important:**
+
 Please note that this is a small script hence script maintenance looks easy. But with time test suite will grow. As you add more and more lines to your code, things become tough. The main problem with script maintenance is that if 10 different scripts are using the same page element, with any change in that element, you need to change all 10 scripts. This is time consuming, error prone, expensive to maintain and is not the right approach for test automation.
 
 A better approach to script maintenance is to create a separate class file which would find web elements, fill them or verify them. This class can be reused in all the scripts using that element. In future, if there is a change in the web element, we need to make the change in just 1 class file and not 10 different scripts.
