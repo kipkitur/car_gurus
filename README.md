@@ -81,17 +81,11 @@ Verify whether you have correctly installed allure by checking the version insta
 ![allure version](screenshots/pytest_allure_terminal_1.PNG)
 
 It is time to run the test, gather results and generate a test report. To enable Allure listener to collect results during the test execution simply add
---alluredir option and provide a path to the folder where results should be stored as shown below.
-
-**$ py.test --alluredir=%allure_result_folder% ./your_test_script.py**
-
-allure_result_folder is the location to store the test results as “.XML” files. In our example, I created a folder named "Reports". This is what my command looks like:
+--alluredir option and provide a path to the folder where results should be stored. The test results as “.XML” files. In our example, I created a folder named "Reports" and added the path to my test scrupt. This is what my command looks like:
 
 **py.test --alluredir=%Reports% ./test_used_hyundai_sonata_dropdown.py**
 
-To see the actual report after your tests have finished, you need to use Allure command-line utility to generate a report from the results.
-
-**$ allure serve %allure_result_folder%**
+To see the actual report after your tests have finished, you need to use allure command-line utility to generate a report from the results.
 
 This command will show you generated a report in your default browser. 
 
