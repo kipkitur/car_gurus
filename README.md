@@ -28,7 +28,7 @@ Use the test data in the table below;
 
 Expected Result;
 
-Cargurus used car home page will open. User will fill the test data in the search field on the left corner of the web page and click on the search button. Used hyundai sonata vehicles will be displayed. 
+Used Hyundai Sonata will be displayed. 
 
 Actual result;
 
@@ -67,3 +67,38 @@ To install the necessary packages using **PyCharm** (on **Windows 10**):
 Make sure you have the packages installed otherwise you won't be able to import the modules and run your tests.
 
 You can run your test via terminal. Type **pytest -v filename** or **pytest -v** to run all other tests you have in the folder.
+
+
+**Reports**
+To generate test automation report you only need to install allure-pytest package.
+
+Navigate to File(top right corner of Pycharm) and click on Settings. Click on Project Interpreter. Click on the **+** symbol and type in allure in the search box. Select allure-pytest and click on **install package**.
+
+![package installer pytest](screenshots/allure_project_intepreter.PNG)
+
+Verify whether you have correctly installed allure by checking the version installed from the terminal.
+
+![allure version](screenshots/pytest_allure_terminal_1.PNG)
+
+It is time to run the test, gather results and generate a test report. To enable Allure listener to collect results during the test execution simply add
+--alluredir option and provide a path to the folder where results should be stored as shown below.
+
+**$ py.test --alluredir=%allure_result_folder% ./your_test_script.py**
+
+allure_result_folder is the location to store the test results as “.XML” files. In our example, I created a folder named "Reports". This is what my command looks like:
+
+**py.test --alluredir=%Reports% ./test_used_hyundai_sonata_dropdown.py**
+
+To see the actual report after your tests have finished, you need to use Allure command-line utility to generate a report from the results.
+
+**$ allure serve %allure_result_folder%**
+
+This command will show you generated a report in your default browser. 
+
+**$ allure serve %Reports%**
+
+![allure version](screenshots/pytest_allure_terminal_2.PNG)
+
+Here is a screenshot.
+
+![allure version](screenshots/allure_report_1.PNG)
