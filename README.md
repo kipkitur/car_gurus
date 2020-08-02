@@ -80,7 +80,9 @@ Verify whether you have correctly installed allure by checking the version insta
 
 ![allure version](screenshots/pytest_allure_terminal_1.PNG)
 
-It is time to run the test, gather results and generate a test report. To enable Allure listener to collect results during the test execution simply add
+It is time to run the test, gather results and generate a test report. 
+
+To enable Allure listener to collect results during the test execution simply add
 --alluredir option and provide a path to the folder where results should be stored. The test results as “.XML” files. In our example, I created a folder named "Reports" and added the path to my test scrupt. This is what my command looks like:
 
 **py.test --alluredir=%Reports% ./test_used_hyundai_sonata_dropdown.py**
@@ -96,3 +98,21 @@ This command will show you generated a report in your default browser.
 Here is a screenshot.
 
 ![allure version](screenshots/allure_report_1.PNG)
+
+
+Alternatively, you can **automate** the test by running a shell script.
+
+Prerequisites:
+Make sure you have [git bash](https://gitforwindows.org/) installed if you are on Windows.
+
+Create a bash script in the project directory. Here is [link](https://github.com/kipkitur/car_gurus/blob/main/reportscript.sh) to the script I created.
+
+Navigate to file settings and add bash package in your project interpreter.
+
+Navigate to run/debug configurations and edit the interpreter path to point to where git-bash is installed on your machine.
+![interpreter path](screenshots/git_bash_path.PNG)
+
+Now run the test. 
+
+Git bash will start a new session and execute your test as shown below.
+![bash package](screenshots/bash_script_cargurus.PNG)
